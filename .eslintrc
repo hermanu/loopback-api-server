@@ -7,6 +7,9 @@
             "jsx": true
         }
       },
+      "globals": {
+          "log":true
+      },
       "rules":{
         "max-len": ["error",120, {"ignoreComments": true}],
         "no-param-reassign": "off"
