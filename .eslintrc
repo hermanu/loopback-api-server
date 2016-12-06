@@ -1,0 +1,14 @@
+{
+    "extends": "loopback",
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+      },
+      "rules":{
+        "max-len": ["error",120, {"ignoreComments": true}]
+          }
+
+}
