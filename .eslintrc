@@ -1,5 +1,5 @@
 {
-    "extends": "loopback",
+    "extends": "airbnb",
     "parserOptions": {
         "ecmaVersion": 6,
         "sourceType": "module",
@@ -8,7 +8,8 @@
         }
       },
       "rules":{
-        "max-len": ["error",120, {"ignoreComments": true}]
+        "max-len": ["error",120, {"ignoreComments": true}],
+        "no-param-reassign": "off"
           }
 
 }

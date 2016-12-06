@@ -1,12 +1,15 @@
+const debug = require('debug')('loopback-api-server');
+
 
 module.exports = (app) => {
   const Customer = app.models.Customer;
   const Role = app.models.Role;
   const RoleMapping = app.models.RoleMapping;
 
-  //TODO: User creation
+  debug('Hello');
+  // TODO: User creation
 
-//Role creation
+// Role creation
   // Role.create({name: 'user'}, (err, adminRole) => {
   //   if (err) return console.log('err', err);
   //   console.log(adminRole);
