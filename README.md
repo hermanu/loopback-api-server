@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/hermanu/loopback-api-server.svg?branch=master)](https://travis-ci.org/hermanu/loopback-api-server)
+
 # loopback-api-server 
 
 ## Introduction
