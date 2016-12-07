@@ -1,0 +1,70 @@
+{
+  "name": "Customer",
+  "plural": "Customers",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "firstname": {
+      "type": "string",
+      "required": true
+    },
+    "lastname": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "degree": {
+      "type": "string"
+    },
+    "birthdate": {
+      "type": "date"
+    },
+    "gender": {
+      "type": "string"
+    },
+    "active": {
+      "type": "boolean"
+    },
+    "professional_profile": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "createAt": {
+      "type": "date",
+      "hidden": true
+    },
+    "activation_code": {
+      "type": "string"
+    },
+    "accept_conditions": {
+      "type": "boolean"
+    },
+    "recovery_code": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [
+      {
+      "accessType": "*",
+      "principalType": "Role",
+      "principalId": "user",
+      "permission": "DENY"
+    },
+    {
+      "accessType": "EXECUTE",
+      "principalType": "Role",
+      "principalId": "$owner",
+      "permission": "ALLOW",
+      "property": "findById"
+    }
+  ],
+  "methods": {}
+}
