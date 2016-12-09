@@ -6,7 +6,7 @@ const log = require('../common/helpers/logger');
 const app = module.exports = loopback();
 
 
-app.start = function () {
+app.start = function start() {
   // start the web server
   return app.listen(() => {
     app.emit('started');
