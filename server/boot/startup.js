@@ -4,7 +4,6 @@ module.exports = (app) => {
   const Customer = app.models.Customer;
   const Role = app.models.Role;
   const RoleMapping = app.models.RoleMapping;
-  log.info('test');
   // TODO: User creation
 
 // Role creation
