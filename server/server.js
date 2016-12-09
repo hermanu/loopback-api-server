@@ -1,6 +1,7 @@
 
 const loopback = require('loopback');
 const boot = require('loopback-boot');
+const log = require('../common/helpers/logger');
 
 const app = module.exports = loopback();
 
@@ -10,10 +11,10 @@ app.start = function () {
   return app.listen(() => {
     app.emit('started');
     const baseUrl = app.get('url').replace(/\/$/, '');
-    console.log(`Web server listening at:${baseUrl} `);
+    log.info(`Web server listening at: ${baseUrl} `);
     if (app.get('loopback-component-explorer')) {
       const explorerPath = app.get('loopback-component-explorer').mountPath;
-      console.log(`Browse your REST API at ${baseUrl}${explorerPath}`);
+      log.info(`Browse your REST API at: ${baseUrl}${explorerPath}`);
     }
   });
 };
